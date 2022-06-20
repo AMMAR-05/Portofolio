@@ -1,0 +1,7 @@
+.contact {
+    height: 700px;
+    padding-top: 10rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}

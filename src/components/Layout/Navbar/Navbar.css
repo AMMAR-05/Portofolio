@@ -1,0 +1,33 @@
+.navi {
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--primary-color2);
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  z-index: 1;
+}
+.brand {
+  font-size: var(--nav-fontSize);
+  font-weight: var(--nav-fontWeight);
+}
+.menu a {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: var(--nav-fontSize);
+  color: var(--secondary-color);
+}
+.instagram__icon,
+.linkedin__icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
