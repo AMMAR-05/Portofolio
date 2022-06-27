@@ -5,7 +5,7 @@ import { FaDev } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
 function Intro() {
   return (
-    <section className="intro">
+    <section className="intro" id="intro">
       <div className="intro__image-container">
         <img className="intro__image" src={AmmarImg} alt="" />
       </div>
@@ -18,22 +18,22 @@ function Intro() {
           {/* Job */}
           <div className="intro__job">
             <FaDev className="intro__icon" />
-            <p>Web Developer</p>
+            <p className="intro__kind">Web Developer</p>
           </div>
 
           {/* Location */}
           <div className="intro__location">
             <MdLocationCity className="intro__icon" />
-            <p>Germany, Duesseldorf</p>
+            <p className="intro__kind">Germany, Duesseldorf</p>
           </div>
         </div>
       </div>
 
       {/* More Info */}
       <div className="moreInfo">
-        <p>Take a look at my projects</p>
-        <p>More about me</p>
-        <p>Contact me</p>
+        <p className="creativity">Creativity</p>
+        <p className="patience">Patience</p>
+        <p className="dedication">Dedication</p>
       </div>
     </section>
   );

@@ -1,15 +1,14 @@
 .intro  {
-    height: 750px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
     background-color: var(--secondary-color);
 }
-
 .intro__image-container {
    text-align: center;
+
 }
 .intro__image {
     width: 10rem;
@@ -26,15 +25,13 @@
     border-radius: 4px;
     background-color: var(--primary-color2);
 }
-
 .intro__text h2 {
     font-size: 2.5rem;
     text-align: center;
     padding: 0.4rem;
-    text-shadow: 0 0 5px rgb(6, 65, 129);
+    text-shadow: 0 0 1px var(--border-color);
     color: var(--secondary-color);
 }
-
 .intro__job {
     position: absolute;
     bottom: 5rem;
@@ -52,20 +49,63 @@
 .intro__icon{
     font-size: 1.5rem;
 }
-.intro__job p,.intro__location p {
+.intro__kind {
     margin-left: 0.4rem;
     text-transform: uppercase;
     font-weight: 500;
 }
-
 .moreInfo {
-    text-align: center;
     padding: 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.moreInfo p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 
-@media  (max-width: 716px) {
-    .intro__text {
-        font-size: 1.2rem;
+/* Mobil */
+@media  (max-width: 700px) {
+    .intro_info {
+       width: 40rem;
     }
- 
+    .intro__text h2 {
+        font-size: 2rem;
+        padding: 0.4rem;
+    }
+    .intro__job {
+        bottom: 4rem;
+    }
+    .intro__location {
+        bottom: 4rem;
+    }
+    .intro__icon{
+        font-size: 1.5rem;
+    }
+}
+/* Smaller mobil */
+@media  (max-width: 575px) {
+    .intro_info {
+       width: 23rem;
+    }
+    .intro__text h2 {
+        font-size: 1.5rem;
+        padding: 0.4rem;
+    }
+    .intro__job {
+        bottom: 5.5rem;
+    }
+    .intro__location {
+        bottom: 5.5rem;
+        right: 5px;
+    }
+    .intro__icon{
+        font-size: 0.9rem;
+    }
+    .intro__kind {
+        font-size: 0.5rem;
+        margin-left: 0.1rem;
+
+    }
 }

@@ -1,44 +1,75 @@
 import React from "react";
-import { Link } from "react-scroll";
 import "./Navbar.css";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { Link } from "react-scroll";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import Logo from "./images/logo.svg";
+
 function Navbar() {
   return (
     <nav className="navi">
       {/* Brand */}
-      <h1 className="brand">AMMAR DANOURA</h1>
+      {/* <h1 className="brand">AMMAR DANOURA</h1> */}
+      <div className="logo-container">
+        <img className="logo" src={Logo} alt="logo" />
+      </div>
 
       {/* Menu of links */}
       <ul className="menu pointer">
-        <Link to="intro" spy={true} smooth={true} offset={0} duration={700}>
+        <Link
+          activeClass="active"
+          spy={true}
+          to="intro"
+          smooth={true}
+          duration={900}
+        >
           Home
         </Link>
         <Link
-          to="projects"
+          activeClass="active"
           spy={true}
+          to="projects"
           smooth={true}
-          offset={100}
-          duration={700}
+          duration={900}
         >
-          projects
+          Projects
         </Link>
-        <Link to="about" spy={true} smooth={true} offset={50} duration={700}>
+        <Link
+          activeClass="active"
+          spy={true}
+          to="about"
+          smooth={true}
+          duration={900}
+        >
           About
         </Link>
-        <Link to="contact" spy={true} smooth={true} offset={50} duration={700}>
+        <Link
+          activeClass="active"
+          spy={true}
+          to="contact"
+          smooth={true}
+          duration={900}
+        >
           Contact
         </Link>
       </ul>
 
       {/* Social media Icons */}
       <div className="social__icon">
-        <Link to="/">
-          <AiOutlineInstagram className="instagram__icon" />
-        </Link>
-        <Link to="/">
+        <a
+          href="https://github.com/AMMAR-05"
+          className="githubLink"
+          target="blank"
+        >
+          <AiOutlineGithub className="github__icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ammar-danoura-794b49227/"
+          className="linkedinLink"
+          target="blank"
+        >
           <AiOutlineLinkedin className="linkedin__icon" />
-        </Link>
+        </a>
       </div>
     </nav>
   );

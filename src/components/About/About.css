@@ -1,0 +1,73 @@
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    color: var(--primary-color2);
+    background-color: #facd60;
+}
+
+.aboutme-title,.skills-title {
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.aboutme,.skills  {
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+.aboutme h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skills {
+    align-self: flex-end;
+    text-transform: uppercase;
+}
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 985px) {
+    .aboutme-title,.skills-title {
+        font-size: 3em;
+    }   
+    .aboutme h3 {
+        font-size: 1.2rem;
+    }
+    .skills h3 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 800px) {
+    .aboutme-title,.skills-title {
+        font-size: 3em;
+    }   
+    .aboutme h3 {
+        font-size: 1rem;
+    }
+    .skills h3 {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 520px) {
+    .aboutme-title,.skills-title {
+        font-size: 2.5em;
+    }   
+    .aboutme h3 {
+        font-size: 0.8rem;
+    }
+    .skills h3 {
+        font-size: 0.6rem;
+    }
+}

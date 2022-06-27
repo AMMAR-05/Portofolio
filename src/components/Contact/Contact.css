@@ -1,0 +1,13 @@
+.contact {
+    height: 100vh;
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--primary-color2);
+
+}
+.contact h2 {
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}

@@ -1,33 +1,65 @@
 .navi {
   position: fixed;
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
   background-color: var(--primary-color2);
   color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
   z-index: 1;
 }
-.brand {
-  font-size: var(--nav-fontSize);
-  font-weight: var(--nav-fontWeight);
+.logo-container {
+  width: 5rem;
+  height: 100%;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
 }
 .menu a {
   text-decoration: none;
   margin: 0 1rem;
   font-size: var(--nav-fontSize);
   color: var(--secondary-color);
-}
-.instagram__icon,
-.linkedin__icon {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.pointer {
   cursor: pointer;
 }
+.menu a:hover {
+  color: var(--border-color);
+}
+.menu a.active {
+  color: var(--border-color);
+}
+.github__icon,
+.linkedin__icon {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+}
+.linkedin__icon:hover, .github__icon:hover {
+  color: var(--border-color);
+}
+
+
+/* Mobil */
+@media (max-width: 600px) {
+  .navi {
+    padding: 0 1rem;
+  }
+  .logo-container {
+    width: 3rem;
+  }
+  .menu a {
+    font-size: small;
+    margin: 0 0.5rem;
+  }
+  .github__icon,
+  .linkedin__icon {
+  font-size: 1rem;
+  margin-right: 0rem;
+}
+}
