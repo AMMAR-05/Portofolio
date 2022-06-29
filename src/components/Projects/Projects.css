@@ -1,6 +1,6 @@
 .projects {
     padding-top: 8rem;
-    background-color: #facd60;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

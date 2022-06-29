@@ -61,5 +61,8 @@
   .linkedin__icon {
   font-size: 1rem;
   margin-right: 0rem;
-}
+  }
+  .github__icon {
+    margin-right: 0.4rem;
+  }
 }
