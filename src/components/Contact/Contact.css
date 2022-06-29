@@ -33,6 +33,20 @@
     background-color: var(--border-color);
 }
 
+/* Email Status */
+.email_status_pending {
+    color: var(--bg-color);
+}
+.email_status_success {
+    color: rgb(83, 235, 12);
+}
+.email_status_faild {
+    color: red;
+}
+.eResult {
+    padding-top: 0.5rem;
+}
+
 /* Contact Info */
 .contact_infos {
     width: 40%;
@@ -105,7 +119,7 @@
         margin-top: 2.1rem;
     }
     .contact_title {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 3rem;
     }
     .personal_info div {
@@ -121,12 +135,12 @@
 
 @media (max-width: 1150px) {
     .contact_title {
-        margin-bottom: 1rem;
+        margin-bottom: 0.2rem;
         margin-top: 1rem;
         font-size: 2.5rem;
     }
     .personal_info div {
-        margin-bottom: 1.1rem;
+        margin-bottom: 1.3rem;
         margin-left: 2rem;
         font-size: 1.3rem;
     }
