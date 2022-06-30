@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 // import Footer from "./components/Layout/Footer/Footer";
 
+import Logo from "./components/Layout/Navbar/images/logo.svg";
+
 function App() {
   const [homeIsLoading, setHomeIsLoading] = useState(false);
 
@@ -19,6 +21,9 @@ function App() {
     <div className="App">
       {homeIsLoading && (
         <div className="loading_bg">
+          <div className="logo_container_loading">
+            <img className="logo_loading" src={Logo} alt="logo" />
+          </div>
           <h2 className="animate_charcter">
             <span className="text">DO SOMETHING GREAT</span>
           </h2>
