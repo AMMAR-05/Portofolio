@@ -5,6 +5,7 @@
     color: var(--secondary-color);
     background-color: var(--primary-color2);
 }
+
 .email_container {
     width: 60%;
     font-size: 1.5rem;

@@ -30,11 +30,11 @@ function Intro() {
       </div>
 
       {/* More Info */}
-      <div className="moreInfo">
+      {/* <div className="moreInfo">
         <p className="creativity">Creativity</p>
         <p className="patience">Patience</p>
         <p className="dedication">Dedication</p>
-      </div>
+      </div> */}
     </section>
   );
 }

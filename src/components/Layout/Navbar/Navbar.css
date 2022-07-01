@@ -8,7 +8,7 @@
   padding: 0 2rem;
   background-color: var(--primary-color2);
   color: var(--secondary-color);
-  z-index: 1;
+  z-index: 106;
 }
 .logo-container {
   width: 5rem;

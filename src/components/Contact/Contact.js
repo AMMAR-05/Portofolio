@@ -38,6 +38,7 @@ function Contact() {
   };
   return (
     <section className="contact" id="contact">
+      {/* <h3 className="contact_title">Contact</h3> */}
       <form onSubmit={sendEmail} className="email_container">
         <label htmlFor="fname">Your Name</label>
         <input type="text" id="fname" name="fname" required />
@@ -58,7 +59,6 @@ function Contact() {
         {emailSent}
       </form>
       <div className="contact_infos">
-        <h3 className="contact_title">Contact</h3>
         <div className="personal_info">
           <div>
             <GiModernCity className="contact_icon" />
