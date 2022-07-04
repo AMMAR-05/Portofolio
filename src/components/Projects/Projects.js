@@ -21,7 +21,7 @@ const luckyDrink = {
   tools: ["Html", "Css", "Jqurey"],
   image: [LuckyDrinkImage],
   gitLink: "https://github.com/AMMAR-05/LUCKY_DRINK",
-  link: "https://lucky-drink.vercel.app/",
+  link: "http://luckydrink.ammardan.com/",
 };
 const pizza = {
   title: "Pizza",

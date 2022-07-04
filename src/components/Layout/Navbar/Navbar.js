@@ -4,12 +4,10 @@ import { Link } from "react-scroll";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import Logo from "./images/logo.svg";
-
 function Navbar() {
   return (
     <nav className="navi">
       {/* Brand */}
-      {/* <h1 className="brand">AMMAR DANOURA</h1> */}
       <div className="logo-container">
         <img className="logo" src={Logo} alt="logo" />
       </div>

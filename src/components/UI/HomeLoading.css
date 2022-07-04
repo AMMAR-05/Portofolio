@@ -17,9 +17,15 @@
 
 
 @keyframes loadingPage {
-  to {
-    transform: translateY(200%);
-  }
+ 
+  to{
+    opacity: 10%;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
 }
 /* End Loading page */
 
@@ -80,39 +86,3 @@
     font-size: 2.5rem;
   }
 }
-
-
-
-
-/* 
-.logo_container_loading {
-  position: absolute;
-  top: 38%;
-  left: 35%;
-  width: 3rem;
-  height: 3rem;
-  animation: logoLoading 3s ease-in-out;
-  background-color: #ddac0d;
-  border-radius: 5px;
-}
-
-@keyframes logoLoading {
-  0% {
-    left: 29%;
-  }
-
-  50% {
-    left: 58%;
-  }
-
-  100% {
-    left: 29%;
-  }
-}
-
-.logo_loading {
-  width: 100%;
-  height: 100%;
-  padding: 0.7rem;
-  animation: glow 3s ease-in-out;
-}  */

@@ -111,13 +111,13 @@
         align-items: center;
     }
     .email_container label{
-        margin-bottom: 1rem;
+        margin-bottom: 2.7rem;
     }
     
     /* Contact Info */
     .contact_infos {
         width: 100%;
-        margin-top: 2.1rem;
+        padding: 2.6rem 0;
     }
     .contact_title {
         margin-bottom: 0.5rem;
@@ -140,8 +140,8 @@
         margin-top: 1rem;
         font-size: 2.5rem;
     }
+   
     .personal_info div {
-        margin-bottom: 1.3rem;
         margin-left: 2rem;
         font-size: 1.3rem;
     }

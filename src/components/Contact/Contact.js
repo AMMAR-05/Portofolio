@@ -38,7 +38,6 @@ function Contact() {
   };
   return (
     <section className="contact" id="contact">
-      {/* <h3 className="contact_title">Contact</h3> */}
       <form onSubmit={sendEmail} className="email_container">
         <label htmlFor="fname">Your Name</label>
         <input type="text" id="fname" name="fname" required />
@@ -58,6 +57,7 @@ function Contact() {
         <button className="email_btn">Send</button>
         {emailSent}
       </form>
+
       <div className="contact_infos">
         <div className="personal_info">
           <div>

@@ -11,15 +11,16 @@
   z-index: 106;
 }
 .logo-container {
-  width: 5rem;
+  width: 80px;
   height: 100%;
+  background-color: var(--secondary-color);
 }
 .logo {
   width: 100%;
   height: 100%;
   padding: 0.7rem;
-  background-color: var(--secondary-color);
 }
+
 .menu a {
   text-decoration: none;
   margin: 0 1rem;
