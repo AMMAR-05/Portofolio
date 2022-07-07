@@ -1,10 +1,31 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b2929;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #36AE7C;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EB5353;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Saira Condensed', sans-serif;
 }
-
 :root {
   --primary-color: #161616;
   --primary-color2: #2b2929;
@@ -16,4 +37,12 @@
   --border-color: #ddac0d;
   --bg-color: #facd60;
 }
-
+.App {
+  position: relative;
+}
+.main {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+}

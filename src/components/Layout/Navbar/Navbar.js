@@ -8,9 +8,15 @@ function Navbar() {
   return (
     <nav className="navi">
       {/* Brand */}
-      <div className="logo-container">
+      <Link
+        to="intro"
+        spy={true}
+        smooth={true}
+        duration={900}
+        className="logo-container"
+      >
         <img className="logo" src={Logo} alt="logo" />
-      </div>
+      </Link>
 
       {/* Menu of links */}
       <ul className="menu pointer">
@@ -62,7 +68,7 @@ function Navbar() {
           <AiOutlineGithub className="github__icon" />
         </a>
         <a
-          href="https://www.linkedin.com/in/ammar-danoura-794b49227/"
+          href="https://www.linkedin.com/in/ammar-danoura/"
           className="linkedinLink"
           target="blank"
         >

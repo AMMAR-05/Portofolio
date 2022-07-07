@@ -1,9 +1,9 @@
 .about {
-    height: 46rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 5rem;
+    height: 46rem;
     color: var(--primary-color2);
     background-color: var(--bg-color);
 }
@@ -12,7 +12,6 @@
     font-size: 4em;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 1rem;
 }
 
 .aboutme,.skills  {
@@ -65,9 +64,9 @@
         font-size: 2.5em;
     }   
     .aboutme h3 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .skills h3 {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 }

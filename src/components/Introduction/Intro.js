@@ -5,18 +5,8 @@ import { FaDev } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
 import "./intro.css";
 function Intro() {
-  const [homeIsLoading, setHomeIsLoading] = useState(false);
-
-  useEffect(() => {
-    setHomeIsLoading(true);
-    const timer = setTimeout(() => {
-      setHomeIsLoading(false);
-    }, 7000);
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <>
-      {homeIsLoading && <HomeLoading />}
       <section className="intro" id="intro">
         <div className="intro__image-container">
           <img className="intro__image" src={AmmarImg} alt="" />

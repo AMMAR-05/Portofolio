@@ -8,11 +8,13 @@
   padding: 0 2rem;
   background-color: var(--primary-color2);
   color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
   z-index: 106;
 }
 .logo-container {
   width: 80px;
   height: 100%;
+  cursor: pointer;
   background-color: var(--secondary-color);
 }
 .logo {

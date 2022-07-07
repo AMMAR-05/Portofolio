@@ -5,7 +5,6 @@ import { GiModernCity } from "react-icons/gi";
 import { BiCurrentLocation } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiMobileAlt } from "react-icons/bi";
-import FooterImage from "../Layout/Navbar/images/logo.svg";
 
 function Contact() {
   const [emailSent, setEmailSent] = useState("");
@@ -66,7 +65,7 @@ function Contact() {
           </div>
           <div>
             <BiCurrentLocation className="contact_icon" />
-            <p className="myAdress">Chemnitzer Str. 45</p>
+            <p className="myAdress">Chemnitzer Street</p>
           </div>
           <div>
             <HiOutlineMail className="contact_icon" />
@@ -82,13 +81,6 @@ function Contact() {
           <p>Icon2</p>
           <p>Icon3</p>
         </div> */}
-      </div>
-      <div className="copyWriteName">
-        <h2>
-          AMMAR <span className="year_span">2022</span>
-          <span className="copyWriteIcon">&copy;</span>
-        </h2>
-        <img className="logo_footer" src={FooterImage} alt="logoFooter" />
       </div>
     </section>
   );
