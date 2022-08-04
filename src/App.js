@@ -21,11 +21,9 @@ function App() {
   return (
     <div className="App">
       {/* Home Loading */}
-      {homeIsLoading && <HomeLoading />}
-
+      {/* {homeIsLoading && <HomeLoading />} */}
       {/* Navbar */}
       <Navbar />
-
       <main className="main">
         {/* Intro */}
         <Intro />

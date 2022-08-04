@@ -32,10 +32,9 @@
 }
 .menu a:hover {
   color: var(--border-color);
+
 }
-.menu a.active {
-  color: var(--border-color);
-}
+
 .github__icon,
 .linkedin__icon {
   margin-right: 0.5rem;

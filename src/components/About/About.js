@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="aboutme">
-        <h2 className="aboutme-title">About me</h2>
+        <span className="aboutme-title">About me</span>
         <h3>Born on Syria, living in Germany.</h3>
         <h3>Studied Full-Stack Software Engineering at DCI, Berlin.</h3>
         <h3>Aside from coding, I enjoy designing websites.</h3>
