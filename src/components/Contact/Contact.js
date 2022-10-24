@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
-import { GiModernCity } from "react-icons/gi";
-import { BiCurrentLocation } from "react-icons/bi";
-import { HiOutlineMail } from "react-icons/hi";
-import { BiMobileAlt } from "react-icons/bi";
 
 function Contact() {
   const [emailSent, setEmailSent] = useState("");
   const [emailSentStaus, setEmailStatus] = useState(false);
 
+  console.log(emailSentStaus);
   const sendEmail = (e) => {
     setEmailSent(<h3 className="email_status_pending eResult">Sending...</h3>);
     e.preventDefault();
@@ -37,51 +34,27 @@ function Contact() {
   };
   return (
     <section className="contact" id="contact">
-      <form onSubmit={sendEmail} className="email_container">
-        <label htmlFor="fname">Your Name</label>
-        <input type="text" id="fname" name="fname" required />
+      <form onSubmit={sendEmail} className="form_container">
+        <div className="form_inputs">
+          <label htmlFor="fname">Your Name</label>
+          <input type="text" id="fname" name="fname" required />
 
-        <label htmlFor="user_email">Your Email</label>
-        <input type="email" id="user_email" name="user_email" required />
+          <label htmlFor="user_email">Your Email</label>
+          <input type="email" id="user_email" name="user_email" required />
 
-        <label htmlFor="message">Your Message</label>
-        <textarea
-          type="text"
-          id="message"
-          name="message"
-          placeholder="write your message"
-          required
-        />
+          <label htmlFor="message">Your Message</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            placeholder="write your message"
+            required
+          />
 
-        <button className="email_btn">Send</button>
-        {emailSent}
-      </form>
-
-      <div className="contact_infos">
-        <div className="personal_info">
-          <div>
-            <GiModernCity className="contact_icon" />
-            <p className="myCity">Germany, Duesseldorf</p>
-          </div>
-          <div>
-            <BiCurrentLocation className="contact_icon" />
-            <p className="myAdress">Chemnitzer Street</p>
-          </div>
-          <div>
-            <HiOutlineMail className="contact_icon" />
-            <p className="myEmail">ammardan.5d@gmail.com</p>
-          </div>
-          <div>
-            <BiMobileAlt className="contact_icon" />
-            <p className="myNumber">+49 &#40;0&#41; 15778812707</p>
-          </div>
+          <button className="email_btn">Send</button>
+          {emailSent}
         </div>
-        {/* <div className="personal_icon">
-          <p>Icon1</p>
-          <p>Icon2</p>
-          <p>Icon3</p>
-        </div> */}
-      </div>
+      </form>
     </section>
   );
 }

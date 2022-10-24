@@ -20,42 +20,50 @@ function Navbar() {
 
       {/* Menu of links */}
       <ul className="menu pointer">
-        <Link
-          to="intro"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={900}
-        >
-          Home
-        </Link>
-        <Link
-          to="projects"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={900}
-        >
-          Projects
-        </Link>
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={900}
-        >
-          About
-        </Link>
-        <Link
-          to="contact"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={900}
-        >
-          Contact
-        </Link>
+        <li>
+          <Link
+            to="about"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={900}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="projects"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={900}
+          >
+            Projects
+          </Link>
+        </li>
+        {/* <li>
+          <Link
+            to="about"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={900}
+          >
+            About
+          </Link>
+        </li> */}
+        <li>
+          <Link
+            to="contact"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={900}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* Social media Icons */}

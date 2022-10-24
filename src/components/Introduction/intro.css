@@ -1,137 +1,236 @@
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 46rem;
-    z-index: 100;
-    background-color: whitesmoke;
-}
-
-.intro::before {
-    content: "";
-    position: absolute;
-    top: 0rem;
-    right: 0;
-    width: 100%;
-    height: 20rem;
-    background-color: var(--primary-color2);
-    z-index: 101;
-}
-
-.intro__image-container {
-    text-align: center;
-    z-index: 102;
-}
-
-.intro__image {
-    width: 10rem;
-    height: 15rem;
-    border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 46rem;
+  z-index: 100;
+  color: whitesmoke;
+  background-color: var(--primary-color2);
 }
 
 .intro_info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.intro_info::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -6rem;
+  width: 4rem;
+  height: 12.5rem;
+  border-top: 5px solid;
+  border-left: 5px solid var(--border-color);
+  border-bottom: 5px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation: border_colorize 4s ease-in-out infinite;
+  -webkit-animation: border_colorize 4s ease-in-out infinite;
+}
+
+.intro_info::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: -6rem;
+  width: 4rem;
+  height: 12.5rem;
+  border-top: 5px solid;
+  border-right: 5px solid var(--border-color);
+  border-bottom: 5px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation: border_colorize 2s ease-in-out infinite;
+  -webkit-animation: border_colorize 2s ease-in-out infinite;
+}
+
+@keyframes border_colorize {
+  0% {
+    border-top: 5px solid #36ae7c;
+    border-bottom: 5px solid #eb5353;
+  }
+
+  50% {
+    border-top: 5px solid #36ae7c;
+    border-bottom: 5px solid #eb5353;
+  }
+  100% {
+    border-top: 5px solid #eb5353;
+    border-bottom: 5px solid #36ae7c;
+  }
 }
 
 .intro__text {
-    position: relative;
-    border-radius: 4px;
-    background-color: var(--primary-color2);
+  position: relative;
+  border-radius: 4px;
+  background-color: var(--primary-color2);
+  background-color: var(--border-color);
 }
 
 .intro__text h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 0.4rem;
-    text-shadow: 0 0 1px var(--border-color);
-    color: var(--secondary-color);
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0.4rem;
+  text-shadow: 0 0 1px var(--border-color);
+  color: var(--primary-color2);
 }
 
 .intro__job {
-    position: absolute;
-    bottom: 5rem;
-    left: 0;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .intro__location {
-    position: absolute;
-    bottom: 5rem;
-    right: 0;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
 
 .intro__icon {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--border-color);
 }
 
 .intro__kind {
-    margin-left: 0.4rem;
-    text-transform: uppercase;
-    font-weight: 500;
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--border-color);
 }
 
-.moreInfo {
-    padding: 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
+/* Skills */
+.skills_icon {
+  font-size: 2.5rem;
+  margin: 0rem 0.5rem;
 }
 
-.moreInfo p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 0.2rem;
+/* Icons */
+.js_icon {
+  color: var(--border-color);
+}
+.react_icon {
+  color: #61dbfb;
 }
 
-/* Mobil */
+.redux_icon {
+  color: #764abc;
+}
+.html_icon {
+  color: rgb(243, 70, 40);
+}
+.css_icon {
+  color: #42a2ba;
+}
+.sass_icon {
+  color: #cd6799;
+}
+.twc_icon {
+  color: #38bdf8;
+}
+.bt_icon {
+  color: #7311f6;
+}
+.git_icon {
+  color: #f54d27;
+}
+.node_icon {
+  color: #74ab63;
+}
+.figma_icon {
+  color: #ea4c1d;
+}
+.ps_icon {
+  color: #31a8ff;
+}
+
+@media (max-width: 900px) {
+  .intro_info::after {
+    display: none;
+  }
+  .intro_info::before {
+    display: none;
+  }
+}
+/* tablet */
 @media (max-width: 800px) {
-    .intro_info {
-        width: 35rem;
-        margin: 0 auto;
-    }
-    .intro__text h2 {
-        font-size: 2rem;
-    }
+  .intro_info {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .intro__text h2 {
+    font-size: 2rem;
+  }
 
-    .intro__job {
-        bottom: 4rem;
-    }
+  .intro__job {
+    bottom: 4rem;
+  }
 
-    .intro__location {
-        bottom: 4rem;
-    }
+  .intro__location {
+    bottom: 4rem;
+  }
 
-    .intro__icon {
-        font-size: 1.5rem;
-    }
+  .intro__icon {
+    font-size: 1.5rem;
+  }
+  .intro_info::before {
+    display: none;
+  }
+  .intro_info::after {
+    display: none;
+  }
+  .skills_icon {
+    font-size: 2rem;
+    margin: 0rem 0.5rem;
+  }
 }
 
-/* Smaller mobil */
- @media (max-width: 575px) {
-    .intro_info {
-        width: 23rem;
-        margin: 0 auto;
-    }
-    .intro__text h2 {
-        font-size: 1.5rem;
-    }
-    .intro__job {
-        bottom: 5.7rem;
-    }
-    .intro__location {
-        bottom: 5.7rem;
-        right: 5px;
-    }
-    .intro__icon {
-        font-size: 0.9rem;
-    }
-    .intro__kind {
-        font-size: 0.5rem;
-        margin-left: 0.1rem;
-        margin-top: 0.1rem;
-    }
-} 
+/* mobil */
+@media (max-width: 575px) {
+  .intro_info {
+    width: 23rem;
+    margin: 0 auto;
+  }
+  .intro__text h2 {
+    font-size: 1.5rem;
+  }
+  .intro__job {
+    bottom: 5.7rem;
+  }
+  .intro__location {
+    bottom: 5.7rem;
+    right: 5px;
+  }
+  .intro__icon {
+    font-size: 0.9rem;
+  }
+  .intro__kind {
+    font-size: 0.5rem;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+  }
+
+  .skills_icon {
+    font-size: 1.5rem;
+    margin: 0rem 0.2rem;
+  }
+  .intro_info::before {
+    display: none;
+  }
+
+  .intro_info::after {
+    display: none;
+  }
+}

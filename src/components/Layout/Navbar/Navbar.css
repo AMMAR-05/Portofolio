@@ -23,23 +23,27 @@
   padding: 0.7rem;
 }
 
-.menu a {
+
+.menu {
+  display: flex;
+}
+.menu li{
+  list-style: none;
   text-decoration: none;
   margin: 0 1rem;
   font-size: var(--nav-fontSize);
   color: var(--secondary-color);
   cursor: pointer;
 }
-.menu a:hover {
-  color: var(--border-color);
 
+.menu li:hover {
+  color: var(--border-color);
 }
 
 .github__icon,
 .linkedin__icon {
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-
   color: var(--secondary-color);
   font-size: 1.6rem;
 }
@@ -56,7 +60,7 @@
   .logo-container {
     width: 3rem;
   }
-  .menu a {
+  .menu li {
     font-size: small;
     margin: 0 0.5rem;
   }
