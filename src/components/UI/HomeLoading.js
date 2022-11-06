@@ -10,21 +10,6 @@ function HomeLoading(props) {
   const ModalOverlay = (props) => {
     return (
       <div className="modal_overlay">
-        <div class="bubbles">
-          <div class="bubble">DO</div>
-          <div class="bubble">SOMETHING</div>
-          <div class="bubble">GREAT</div>
-          <div class="bubble">DO</div>
-          <div class="bubble">SOMETHING</div>
-          <div class="bubble">GREAT</div>
-          <div class="bubble">DO</div>
-          <div class="bubble">SOMETHING</div>
-          <div class="bubble">GREAT</div>
-          <div class="bubble">DO</div>
-          <div class="bubble">SOMETHING</div>
-          <div class="bubble">GREAT</div>
-        </div>
-        {/* <div className="text_overlay"> */}
         <h3 className="do">DO</h3>
         <div className="do_spinner"></div>
         <h3 className="something">SOMETHING</h3>

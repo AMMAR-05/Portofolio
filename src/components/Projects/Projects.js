@@ -1,12 +1,12 @@
 import React from "react";
 import Project from "./Project";
 import "./Projects.css";
-
+import { motion } from "framer-motion";
 function Projects() {
   return (
-    <section className="projects">
+    <motion.section className="projects">
       <Project />
-    </section>
+    </motion.section>
   );
 }
 

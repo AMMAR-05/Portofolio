@@ -6,51 +6,80 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background-color: var(--primary-color2);
-  color: var(--secondary-color);
-  border-bottom: 1px solid var(--secondary-color);
   z-index: 106;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
 }
+#dark .navi {
+  background-image: var(--primary-color_2);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
 .logo-container {
   width: 80px;
   height: 100%;
   cursor: pointer;
+}
+
+#dark .logo-container {
   background-color: var(--secondary-color);
 }
+
 .logo {
   width: 100%;
   height: 100%;
   padding: 0.7rem;
 }
 
-
 .menu {
   display: flex;
 }
-.menu li{
+.menu li {
   list-style: none;
   text-decoration: none;
   margin: 0 1rem;
   font-size: var(--nav-fontSize);
-  color: var(--secondary-color);
+  font-weight: 600;
+  color: var(--primary-color);
   cursor: pointer;
+}
+#dark .menu li {
+  color: var(--secondary-color);
 }
 
 .menu li:hover {
-  color: var(--border-color);
+  color: var(--arrow-color);
+}
+
+#dark .menu li:hover {
+  color: var(--arrow-color);
 }
 
 .github__icon,
 .linkedin__icon {
   margin-right: 0.5rem;
   margin-top: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+#dark .github__icon,
+#dark .linkedin__icon {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
   color: var(--secondary-color);
   font-size: 1.6rem;
 }
-.linkedin__icon:hover, .github__icon:hover {
-  color: var(--border-color);
+
+.linkedin__icon:hover,
+.github__icon:hover {
+  color: var(--arrow-color);
 }
 
+#dark .linkedin__icon:hover,
+#dark .github__icon:hover {
+  color: var(--arrow-color);
+}
 
 /* Mobil */
 @media (max-width: 600px) {
@@ -66,8 +95,8 @@
   }
   .github__icon,
   .linkedin__icon {
-  font-size: 1rem;
-  margin-right: 0rem;
+    font-size: 1rem;
+    margin-right: 0rem;
   }
   .github__icon {
     margin-right: 0.4rem;

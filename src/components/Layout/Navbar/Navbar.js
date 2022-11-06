@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import Logo from "./images/logo.svg";
+
 function Navbar() {
   return (
     <nav className="navi">
@@ -42,17 +43,6 @@ function Navbar() {
             Projects
           </Link>
         </li>
-        {/* <li>
-          <Link
-            to="about"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={900}
-          >
-            About
-          </Link>
-        </li> */}
         <li>
           <Link
             to="contact"

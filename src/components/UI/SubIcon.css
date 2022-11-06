@@ -1,7 +1,14 @@
 .logo_footer {
-    position: fixed;
-    bottom: 0rem;
-    right: 1rem;
-    width: 2rem;
-    height: 4rem;
+  position: fixed;
+  bottom: 0rem;
+  right: 1rem;
+  width: 3rem;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+#dark .logo_footer {
+  background-color: var(--arrow-color);
+  background-color: var(--primary-color);
 }

@@ -3,6 +3,7 @@
   width: 1050px;
   height: 500px;
 }
+/* ///////////////// */
 
 .arrow {
   width: 110px;
@@ -20,7 +21,6 @@
   top: 50%;
   right: -12%;
 }
-
 .to_previous {
   position: absolute;
   top: 50%;
@@ -32,15 +32,22 @@
   -o-transform: rotateY(180deg);
 }
 
-.arrow-top, .arrow-bottom {
+.arrow-top,
+.arrow-bottom {
   position: absolute;
   top: 50%;
   padding: 0.6rem;
   width: 100%;
-  background-color: var(--primary-color2);
+  background-color: var(--primary-color);
 }
 
-.arrow-top:after, .arrow-bottom:after {
+#dark .arrow-top,
+#dark .arrow-bottom {
+  background-color: var(--secondary-color);
+}
+
+.arrow-top:after,
+.arrow-bottom:after {
   content: "";
   height: 100%;
   position: absolute;
@@ -50,7 +57,7 @@
   -moz-transition: all 0.15s;
   -ms-transition: all 0.15s;
   -o-transition: all 0.15s;
-  background-color: #eb5353;
+  background-color: var(--arrow-color);
 }
 
 .arrow-top {
@@ -81,7 +88,6 @@
 
 .arrow:hover .arrow-top:after {
   left: 0;
-
 }
 
 .arrow:hover .arrow-bottom:after {
@@ -90,44 +96,89 @@
   transition-delay: 0.15s;
 }
 
-.arrow:active {
-  
-  transform: translateX(-50%) translateY(-50%) scale(0.9);
+/* ///////////////// */
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
-
-.gitlink_title {
+.project_btn {
   text-align: center;
-  background-color: var(--primary-color2);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px var(--primary-color2);
+  width: 10rem;
+  padding: 0.2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  cursor: pointer;
 }
+.project_btn:hover {
+  background-color: var(--arrow-color);
+  background-image: var(--primary-color_2);
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+/* ///////////////// */
+
 .project_image {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px var(--primary-color2);
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
+  box-shadow: 0px 0px 10px #262424;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
+
 .project_image:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  background-color: var(--primary-color2);
-  border: 3px solid var(--border-color);
-  color: var(--secondary-color);
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  border: 3px solid var(--primary-color);
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+#dark .project_image:hover {
+  border: 3px solid var(--secondary-color);
 }
 
-/* .project_container {
-  margin: 20px auto;
-  width: 70%;
-}
-
-@media (max-width: 490px) {
-  .project_container {
+@media (max-width: 768px) {
+  .project_slider {
+    position: relative;
     width: 90%;
   }
-} */
+  .arrow {
+    width: 40px;
+    height: 5rem;
+  }
+  .to_next {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+  }
+  .to_previous {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+  }
+  .project_btn {
+    margin-bottom: 5px;
+    width: 6rem;
+    padding: 0.2rem;
+    margin-right: 0rem;
+  }
+}

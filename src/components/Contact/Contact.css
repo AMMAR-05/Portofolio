@@ -1,70 +1,90 @@
 .contact {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary-color);
-    background-color: var(--primary-color2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+#dark .contact {
+  background-image: var(--primary-color_1);
+  color: var(--secondary-color);
 }
 .form_container {
-    padding: 7rem;
-    width: 50%;
-    font-size: 1.5rem;
+  padding: 7rem;
+  width: 50%;
+  font-size: 1.5rem;
 }
 .form_inputs {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 .form_container input {
-    margin-bottom: 2rem;
-    font-size: large;
+  margin-bottom: 2rem;
+  font-size: large;
 }
-.form_container label{
-    margin-bottom: 0.5rem;
+.form_container label {
+  margin-bottom: 0.5rem;
 }
 
-.form_container input:focus,.form_container textarea:focus {
-    outline: none !important;
-    background-color: var(--primary-color2);
-    box-shadow: 0 0 10px var(--border-color);
-    color: var(--border-color);
+.form_container input:focus,
+.form_container textarea:focus {
+  outline: none !important;
+  background-color: var(--primary-color2);
+  box-shadow: 0 0 10px var(--border-color);
+  color: var(--border-color);
 }
 .form_container textarea {
-    height: 8rem;
-    margin-bottom: 2rem;
-    font-size: large;
-    font-weight: 700;
+  height: 8rem;
+  margin-bottom: 2rem;
+  font-size: large;
+  font-weight: 700;
 }
 .email_btn {
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 5px;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1.5rem;
 }
 .email_btn:hover {
-    background-color: var(--border-color);
+  background-color: var(--arrow-color);
+  background-image: var(--primary-color_2);
+  color: var(--secondary-color);
 }
 
 /* Email Status */
 .email_status_pending {
-    color: var(--bg-color);
+  color: var(--bg-color);
 }
 .email_status_success {
-    color: rgb(83, 235, 12);
+  color: rgb(83, 235, 12);
 }
 .email_status_faild {
-    color: red;
+  color: red;
 }
 .eResult {
-    padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 @media (max-width: 820px) {
-    .form_container {
-        width: 100%;
-    }
-  
-    .form_container input {
-        margin-bottom: 1rem;
-    }
+  .form_container {
+    width: 100%;
+  }
+
+  .form_container input {
+    margin-bottom: 1rem;
+  }
 }

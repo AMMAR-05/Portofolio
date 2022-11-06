@@ -6,7 +6,6 @@ function Contact() {
   const [emailSent, setEmailSent] = useState("");
   const [emailSentStaus, setEmailStatus] = useState(false);
 
-  console.log(emailSentStaus);
   const sendEmail = (e) => {
     setEmailSent(<h3 className="email_status_pending eResult">Sending...</h3>);
     e.preventDefault();

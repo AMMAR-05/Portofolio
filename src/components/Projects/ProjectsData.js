@@ -6,16 +6,21 @@ const projectsApi = [
   {
     title: "Pet Taker",
     type: "Full-Stack",
-    description: "",
-    tools: ["React | Material UI | Node JS | Mongo DB "],
+    description:
+      "Pet Taker is a Full-Stack application to help out people who have pets but cannot take care of them for a period of time. It will also come in handy if someone does not have a pet but always wanted to try it out.",
+
+    tools: [
+      "React | Material UI | React Hook Form | Node JS | Mongo DB | Express | Multer | Cloudinary ",
+    ],
     image: [PetTakerImage],
     gitLink: "https://github.com/AMMAR-05/pet-taker",
-    link: "http://pet-taker.ammardan.com",
+    link: "https://react-star.web.app",
   },
   {
     title: "Crypto",
-    type: "Crypto currencies tracker",
-    description: "",
+    type: "Front-End",
+    description:
+      "Crypto is a Front-End application to keep track of all the Crypto currencies based on the Coingeko Api.",
     tools: [
       "React | Redux | Redux toolkit | Tailwind | React paginate | Axios | Coingeko API",
     ],
@@ -25,8 +30,9 @@ const projectsApi = [
   },
   {
     title: "Lucky Drink",
-    type: "Front-end Project",
-    description: "",
+    type: "Front-End",
+    description:
+      "Lucky Drink is a Front-End Website a simple Landing Page for a bar.",
     tools: ["Html | Css | Jqurey"],
     image: [LuckyDrinkImage],
     gitLink: "https://github.com/AMMAR-05/LUCKY_DRINK",
@@ -34,9 +40,9 @@ const projectsApi = [
   },
   {
     title: "Pizza",
-    type: "Front-end Project",
-    description: "",
-    tools: ["React | Css | Next.js"],
+    type: "Front-End",
+    description: "Pizza is a Resturant website.",
+    tools: ["Next.js | Tailwind "],
     image: [PizzaImage],
     gitLink: "https://github.com/AMMAR-05/PIZZA",
     link: "https://pizza-ivory-xi.vercel.app/",

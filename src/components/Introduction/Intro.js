@@ -13,6 +13,7 @@ import { FaNode } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { SiAdobephotoshop } from "react-icons/si";
+
 function Intro() {
   return (
     <>
@@ -20,8 +21,11 @@ function Intro() {
         <div className="intro_info">
           <div className="intro__text">
             {/* Title */}
-            <h2>Hi, I'm Ammar. I design & build user interfaces.</h2>
-
+            <div className="title_glitch">
+              <h2 className="glitch">
+                Hi, I'm Ammar. I design & build user interfaces.
+              </h2>
+            </div>
             {/* Job */}
             <div className="intro__job">
               <FaDev className="intro__icon" />
@@ -37,7 +41,6 @@ function Intro() {
         </div>
 
         <div className="skills">
-          {/* <h2 className="skills_title">Skills</h2> */}
           <SiJavascript className="skills_icon js_icon" />
           <FaReact className="skills_icon react_icon" />
           <SiRedux className="skills_icon redux_icon" />
@@ -53,10 +56,6 @@ function Intro() {
 
           <FiFigma className="skills_icon figma_icon" />
           <SiAdobephotoshop className="skills_icon ps_icon" />
-
-          {/* <h3>Html | Css | Sass | Bootstrap | Tailwind</h3>
-          <h3>Javascript | React | Redux | Node.js | Git</h3>
-          <h3>Figma | Photoshop </h3> */}
         </div>
       </section>
     </>
