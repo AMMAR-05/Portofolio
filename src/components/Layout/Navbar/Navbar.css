@@ -52,7 +52,7 @@
 }
 
 #dark .menu li:hover {
-  color: var(--arrow-color);
+  color: var(--primary-color);
 }
 
 .github__icon,
@@ -78,7 +78,7 @@
 
 #dark .linkedin__icon:hover,
 #dark .github__icon:hover {
-  color: var(--arrow-color);
+  color: var(--primary-color);
 }
 
 /* Mobil */

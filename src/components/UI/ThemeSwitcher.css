@@ -1,14 +1,28 @@
 .theme_switcher {
   position: fixed;
-  top: 5rem;
-  right: 0;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--arrow-color);
+  top: 83vh;
+  right: 2.8rem;
+  font-size: 3rem;
   color: var(--primary-color);
   cursor: pointer;
+  animation: dimond 2s 1s 2 ease-in-out;
+  -webkit-animation: dimond 2s 1s 2 ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
+
+@keyframes dimond {
+  50% {
+    top: 15vh;
+  }
+  100% {
+    color: rgb(23, 24, 23);
+  }
+}
+
 #dark .theme_switcher {
   color: var(--secondary-color);
 }

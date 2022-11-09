@@ -3,8 +3,8 @@ import "./Project.css";
 import ProjectsData from "./ProjectsData";
 import { motion } from "framer-motion";
 import ReadMore from "../UI/ReadMore";
-
 import { ThemeContext } from "../../components/UI/themeContext";
+
 function Project(props) {
   const [current, setCurrent] = useState(0);
   const [animateSlide, setAnimateSlide] = useState(false);

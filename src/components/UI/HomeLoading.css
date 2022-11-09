@@ -1,156 +1,26 @@
-/* Backdrop */
-.backdorp {
+.glitch_backdrop {
+  background-image: url("./Images/glitch-light.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
   z-index: 500;
-  background-color: #2b2929;
-  scroll-behavior: smooth;
+  animation: glitchBG 2s 1s 2 ease-in-out;
+  -webkit-animation: glitchBG 2s 1s 2 ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 
-/* Modal Overlay */
-.modal_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 501;
-  animation: modalRotate 2s 3s ease-in-out forwards;
-}
-@keyframes modalRotate  { 
-  75% {
-    transform: perspective(900px) rotateY(15deg);
-}
-}
-
-/* Do */
-.do {
-  position: absolute;
-  top: -5rem;
-  left: 10%;
-  font-size: 4rem;
-  animation: doToDown 2s 3s ease-in-out forwards;
-  color: aliceblue;
-}
-@keyframes doToDown {
-  25% {
-    color: #EB5353;
-}
-  100% {
-    top: 10rem;
-   }
-}
-
-.do_spinner {
-  position: absolute;
-  top: 15.5rem;
-  left: 10%;
-  width: 0rem;
-  height: 1rem;
-  animation: doSpinnerToRight 3s 0s ease-in-out forwards;
-  background-color: #EB5353;
-}
-@keyframes doSpinnerToRight {
-  25% {
-    width: 1rem;  
-  }
+@keyframes glitchBG {
   50% {
-    width: 2rem;
-  }
-  75% {
-    width: 3.5rem;
-  }
-  100% {
-    width: 5rem;
-  }
-  
-}
-
-/* Something */
-.something {
-  position: absolute;
-  top: -5rem;
-  left: 10%;
-  font-size: 4rem;
-  font-size: 4rem;
-  animation: somethingToDown 2s 3s ease-in-out forwards;
-  color: aliceblue;
-}
-@keyframes somethingToDown {
-  25% {
-    color: #F9D923;
-  }
-  100% {
-    top: 16rem;
-   }
-}
-
-.something_spinner {
-  position: absolute;
-  top: 21.5rem;
-  left: 10%;
-  width: 0rem;
-  height: 1rem;
-  animation: somethingSpinnerToRight 3s 0s ease-in-out forwards;
-  background-color: #F9D923;
-}
-@keyframes somethingSpinnerToRight {
-  25% {
-    width: 5rem;  
-  }
-  50% {
-    width: 10rem;
-  }
-  75% {
-    width: 15rem;
-  }
-  100% {
-    width: 20rem;
-  }
-}
-
-/* Great */
-.great {
-  position: absolute;
-  top: -5rem;
-  left: 10%;
-  font-size: 4rem;
-  animation: greatToDown 2s 3s ease-in-out forwards;
-  color: aliceblue;
-}
-@keyframes greatToDown {
-  25% {
-    color: #36AE7C;
-  }
-  100% {
-    top: 22rem;
-  }
-}
-
-.great_spinner {
-  position: absolute;
-  top: 27.5rem;
-  left: 10%;
-  width: 0rem;
-  height: 1rem;
-  animation: greatSpinnerToRight 3s 0s ease-in-out forwards;
-  background-color: #36AE7C;
-}
-
-@keyframes greatSpinnerToRight {
-  25% {
-    width: 3rem;  
-  }
-  50% {
-    width: 6rem;
-  }
-  75% {
-    width: 8rem;
-  }
-  100% {
-    width: 12rem;
+    opacity: 10;
   }
 }
